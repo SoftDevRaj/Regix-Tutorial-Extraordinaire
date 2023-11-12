@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tutorial: Understanding Phone Number Patterns</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Regex Tutorial: Understanding the Search Pattern `^1?\d{2,3}-\d{3}-\d{4}$`</h1>
+    </header>
+    <nav>
+        <ul id="table-of-contents">
+            <!-- List table of contents here -->
+            <li><a href="#start-anchor">The Start Anchor ^</a></li>
+            <li><a href="#optional-character">The Optional 1 Character 1?</a></li>
+            <li><a href="#digit-quantifier">The Digit Quantifier \d{2,3}</a></li>
+            <li><a href="#hyphen-delimiter">The Hyphen Delimiter -</a></li>
+            <li><a href="#digit-blocks">The Digit Blocks \d{3} and \d{4}</a></li>
+            <li><a href="#end-anchor">The End Anchor $</a></li>
+            <li><a href="#testing-regex">Testing the Regex</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#about-author">About the Author</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Insert tutorial content here -->
+        <section id="start-anchor">
+            <h2>The Start Anchor ^</h2>
+            <p>The caret (^) character is a start anchor in regex, which means that the search pattern will only match if the string starts with the pattern that follows the caret.</p>
+        </section>
+        <section id="optional-character">
+            <h2>The Optional 1 Character 1?</h2>
+            <p>The pattern "1?" indicates that the number 1 is optional in the pattern. It can appear 0 or 1 time, allowing the regex to match phone numbers with and without a country code.</p>
+        </section>
+        <section id="digit-quantifier">
+            <h2>The Digit Quantifier \d{2,3}</h2>
+            <p>"\d{2,3}" matches a sequence of digits that is at least two but no more than three digits long. This part is typically used to match the area code in phone numbers.</p>
+        </section>
+        <section id="hyphen-delimiter">
+            <h2>The Hyphen Delimiter -</h2>
+            <p>Hyphens are used in the regex as delimiters to separate different parts of the phone number, such as the area code from the local number.</p>
+        </section>
+        <section id="digit-blocks">
+            <h2>The Digit Blocks \d{3} and \d{4}</h2>
+            <p>The "\d{3}" and "\d{4}" patterns match two separate blocks of three and four digits, respectively, which correspond to the first three digits (or prefix) and the last four digits of a local phone number.</p>
+        </section>
+        <section id="end-anchor">
+            <h2>The End Anchor $</h2>
+            <p>The dollar ($) character is an end anchor, ensuring that the regex does not match any characters that come after the pattern, thus defining the end of the searchable string.</p>
+        </section>
+        <section id="testing-regex">
+            <h2>Testing the Regex</h2>
+            <p>Here you can learn how to test this regex pattern against various strings using different tools or programming languages to ensure it matches North American phone number formats correctly.</p>
+        </section>
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>This tutorial covered how to understand and dissect the regex pattern "^1?\d{2,3}-\d{3}-\d{4}$", which can be used to validate North American phone numbers with or without a country code.</p>
+        </section>
+        <section id="about-author">
+            <h2>About the Author</h2>
+            <p>This tutorial was written by Raj. Find more about my work on <a href="https://github.com/softdevraj" target="_blank">GitHub</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>About the Author: <a href="https://github.com/softdevraj" target="_blank">Raj</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

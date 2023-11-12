@@ -1,0 +1,133 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font and background for the whole page */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #eaeaea;
+    color: #333;
+    padding: 10px;
+}
+
+/* Style for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style for navigation menu */
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #5f5f5f;
+}
+
+/* Style for the main content area */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a, footer a:visited {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #333333;
+    padding: 10px 0;
+    font-size: 1.75em;
+    border-bottom: 2px solid #efefef;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the sections in main content */
+section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Style for table of contents */
+#table-of-contents {
+    margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
